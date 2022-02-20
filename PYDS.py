@@ -10,7 +10,7 @@ import webbrowser
 '''
 pyinstaller_versionfile.create_versionfile(
     output_file="versionfile.txt",
-    version="1.2.0",
+    version="1.2.1",
     company_name="PYDS",
     file_description="Python Dictionary Software",
     internal_name="PYDS",
@@ -21,7 +21,7 @@ pyinstaller_versionfile.create_versionfile(
 '''
 
 root = Tk()
-root.title('PYDS V1.2.0')
+root.title('PYDS V1.2.1')
 #root.resizable(0,0)
 root.geometry('800x450')
 textPad=Text(root,undo=True)
@@ -30,7 +30,7 @@ scroll=Scrollbar(textPad)
 textPad.config(yscrollcommand=scroll.set)
 scroll.config(command=textPad.yview)
 scroll.pack(side=RIGHT,fill=Y)
-group = Label(root, text="Copyright© 2021-2022 PYAS Python Dictionary Software",padx=5, pady=2)
+group = Label(root, text="Copyright© 2021-2022 PYDS Python Dictionary Software",padx=5, pady=2)
 group.pack(anchor='e')
 #---
 translator = googletrans.Translator()
@@ -209,7 +209,7 @@ def about():
 版權所有© 2021-2022 PYDS Python Dictionary Software''')
 
 def version():
-    showinfo('Version','軟體版本: PYDS V1.2.0')
+    showinfo('Version','軟體版本: PYDS V1.2.1')
 
 def startm():
     textPad.delete(1.0,END)
@@ -391,7 +391,7 @@ def about_en():
 Copyright© 2021-2022 PYDS Python Dictionary Software''')
 
 def version_en():
-    showinfo('Version','Software Version: PYDS V1.2.0')
+    showinfo('Version','Software Version: PYDS V1.2.1')
 
 def startm_en():
     textPad.delete(1.0,END)
